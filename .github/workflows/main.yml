@@ -30,3 +30,7 @@ jobs:
                   npm i --legacy-peer-deps
                   npm run build --if-present
                   npm run test --if-present
+            - name: Download a single artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: my-artifact
